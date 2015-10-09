@@ -1,0 +1,9 @@
+<span ng-bind="search.clase"></span>
+
+
+<ul>
+	<li ng-repeat="a in Animales | filter:search" class="{{a.clase}}">
+		Clase: {{a.clase}}
+		Nombre: {{a.name}}
+	</li>
+</ul>

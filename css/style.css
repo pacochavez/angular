@@ -1,0 +1,22 @@
+.gato{
+	color : #fff;
+	background : #ff0055;
+}
+
+ul.menu{
+	background: #000;
+	color: #fff;
+}
+.menu li{
+	display: inline-block;
+	list-style: none;
+	margin:5px;
+}
+.menu li:hover{
+	background: red;
+
+}
+.menu li a{
+	color:#fff;
+	text-decoration: none;
+}

@@ -1,0 +1,26 @@
+<html ng-app="appgatito">
+	<head>
+		<title>angular</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/lib/angular.min.js"></script>
+		<script src="js/lib/angular-ui-router.min.js"></script>
+		<!--<script src="js/lib/angular-route.min.js"></script>-->
+		<script src="js/ejemplo1.js"></script>
+		<base href="/angular/">
+	</head>
+	<body>
+		<div ng-controller="miControlador">
+			<ul class="menu">
+				<li>
+					<a ui-sref="menu" >home</a>
+				</li>
+				<li ng-repeat="animal in Animales" > 
+					<a ui-sref="menu.detail({MenuAnimal : animal.clase})">
+						{{animal.clase | capiTalize}}
+					</a>
+				</li>
+			</ul>
+			<div ui-view></div>
+		</div>
+	</body>
+</html>
